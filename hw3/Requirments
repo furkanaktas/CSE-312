@@ -1,0 +1,19 @@
+string filename;
+string creatTime, modifTime, last_access;
+char data[256];
+int fileSize;
+int cursor;
+int usedBlock;
+
+these are file infos (fileAttributes) , and to keep all files  i use 4096 size  fileAttributes array (files).
+
+when file is created, it locates in files array. when it's data field (char[256]) is full, it locates the next index as countinues of that file and  files that after the this index are shifted as they are needed(related the adding new blocks).   
+
+
+P2 reads for 50 nums, and it should be any file for that it runs.
+
+
+debug mode 1 ,  it prints all info of opened files
+debug mode 0 , it prints  all info except data field  of all files, same as DirRead
+
+ 
